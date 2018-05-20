@@ -1,0 +1,22 @@
+{
+    "title": "Business Casual",
+    "name": "startbootstrap-business-casual",
+    "version": "4.0.0",
+    "description": "A casual HTML website theme for businesses built with Bootstrap",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "4.13.3"
+    },
+    "devDependencies": {
+    }
+}
