@@ -1,0 +1,52 @@
+ul {
+  float: right;
+  text-align: right;
+  list-style-type: none;
+  padding-right: 2%;
+}
+
+ul li a, ul li i {
+  color: white;
+}
+
+ul li a:not(a), ul li i:not(a) {
+  border-style: ridge;
+  border-width: 1px 1px 1px 1px;
+  border-color: white;
+  padding: .3rem;
+  font-size: 10px;
+  margin-right: 1px;
+}
+
+body, button {
+  background-color: #ff3333;
+  color: #ffffff;
+  font-family: "Assistant", Sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+input.form-control, textarea.form-control {
+  background-color: #ff3333;
+  border-color: #ff3333;
+}
+
+h3, h6 {
+  width: 100%;
+  color: white;
+  font-weight: 100;
+}
+
+p {
+  color: white;
+  font-weight: 100;
+}
+
+section {
+  height: 100vh;
+}
+
+img {
+  height: 100vh;
+  width: 100%;
+}

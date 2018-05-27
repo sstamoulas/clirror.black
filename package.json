@@ -1,22 +1,36 @@
 {
-    "title": "Business Casual",
-    "name": "startbootstrap-business-casual",
-    "version": "4.0.0",
-    "description": "A casual HTML website theme for businesses built with Bootstrap",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "scripts": {
-        "start": "node server.js"
-    },
-    "dependencies": {
-        "express": "4.13.3"
-    },
-    "devDependencies": {
-    }
+  "title": "Business Casual",
+  "name": "startbootstrap-business-casual",
+  "version": "4.0.0",
+  "description": "A casual HTML website theme for businesses built with Bootstrap",
+  "keywords": [
+    "css",
+    "sass",
+    "html",
+    "responsive",
+    "theme",
+    "template"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "gulp default"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "express": "4.13.3",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "jquery": "^3.3.1",
+    "jquery-easing": "0.0.1",
+    "popper.js": "^1.14.3",
+    "swiper": "^4.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-header": "^2.0.5",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^4.0.1"
+  }
 }
