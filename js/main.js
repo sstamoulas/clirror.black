@@ -15,7 +15,7 @@
     }
   });
 })(jQuery); // End of use strict
-
+/*
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   centeredSlides: true,
@@ -39,3 +39,4 @@ var swiper = new Swiper('.swiper-container', {
     }()),
   },
 });
+*/

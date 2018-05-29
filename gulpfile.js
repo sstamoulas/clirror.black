@@ -35,10 +35,12 @@ gulp.task('vendor', function() {
   // Font-Awesome
   gulp.src([
       './node_modules/font-awesome/css/*',
-      './node_modules/font-awesome/fonts/fontawesome-webfont.*',
       './node_modules/font-awesome/scss/*'
     ])
     .pipe(gulp.dest('./vendor/font-awesome'))
+
+  gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('./vendor/fonts'))
 
   // jQuery
   gulp.src([

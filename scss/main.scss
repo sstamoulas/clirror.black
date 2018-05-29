@@ -15,12 +15,21 @@ ul {
         margin-right: 1px;
       }
       color: white;
+      font-family: "Assistant", Sans-serif;
     }
   }
 }
 
-body, button {
+body {
   background-color: #ff3333;
+  color: #ffffff;
+  font-family: "Assistant", Sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: orange;
   color: #ffffff;
   font-family: "Assistant", Sans-serif;
   font-size: 15px;
@@ -29,8 +38,8 @@ body, button {
 
 input, textarea {
   &.form-control {
-    background-color: #ff3333;
-    border-color: #ff3333;
+    background-color: orange;
+    border-color: orange;
   }
 }
 
@@ -49,7 +58,16 @@ section {
   height: 100vh;
 }
 
-img {
-  height: 100vh;
-  width: 100%;
+.main-image {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%; 
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+.right-nav {
+  top: 40%;
 }
