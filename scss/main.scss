@@ -135,6 +135,31 @@ section {
   }
 }
 
+#about {
+  .title {
+    font-size: 24px;
+    letter-spacing: 15px;
+    font-family: "Raleway", Sans-serif;
+    font-weight: 400;
+  }
+
+  .text {
+    font-family: "Assistant", Sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 3.9px;
+  }
+}
+
+#still {
+  .text {
+    font-size: 13px;
+    letter-spacing: 15px;
+    font-family: "Raleway", Sans-serif;
+    font-weight: 400;
+  }
+}
+
 .navbar-expand-lg {
   .navbar-nav {
     display: block;
