@@ -29,17 +29,29 @@ body {
 }
 
 button {
-  background-color: orange;
+  background-color: gray;
   color: #ffffff;
   font-family: "Assistant", Sans-serif;
   font-size: 15px;
   text-transform: uppercase;
 }
 
+hr {
+  border: none;
+  height: 10px;
+  /* Set the hr color */
+  color: gray; /* old IE */
+  background-color: gray; /* Modern Browsers */
+}
+
+nav {
+  background-color: white;
+}
+
 input, textarea {
   &.form-control {
-    background-color: orange;
-    border-color: orange;
+    background-color: gray;
+    border-color: gray;
   }
 }
 
@@ -66,6 +78,56 @@ section {
   top: 50%; 
   margin-left: -150px;
   margin-top: -150px;
+}
+
+#navbarNav {
+
+  margin-left: 60%;
+  @media (min-width: 576px) {
+    margin-left: 80%;
+  }
+  @media (min-width: 992px) {
+    margin-left: 91%;
+  }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 576px) {
+      width: 50%;
+    }
+}
+
+.bg-dark {
+  background-color: inherit !important;
+
+  .navbar-toggler {
+    .navbar-toggler-icon {
+      padding: 40px;
+    }
+  }
+
+  .right-nav {
+    .nav-item {
+      a {
+        @media (max-width: 768px) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.navbar-expand-lg {
+  .navbar-nav {
+    display: block;
+    @media (max-width: 768px) {
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+  }
 }
 
 .right-nav {

@@ -28,16 +28,30 @@ body {
 }
 
 button {
-  background-color: orange;
+  background-color: gray;
   color: #ffffff;
   font-family: "Assistant", Sans-serif;
   font-size: 15px;
   text-transform: uppercase;
 }
 
+hr {
+  border: none;
+  height: 10px;
+  /* Set the hr color */
+  color: gray;
+  /* old IE */
+  background-color: gray;
+  /* Modern Browsers */
+}
+
+nav {
+  background-color: white;
+}
+
 input.form-control, textarea.form-control {
-  background-color: orange;
-  border-color: orange;
+  background-color: gray;
+  border-color: gray;
 }
 
 h3, h6 {
@@ -63,6 +77,59 @@ section {
   top: 50%;
   margin-left: -150px;
   margin-top: -150px;
+}
+
+#navbarNav {
+  margin-left: 60%;
+}
+
+@media (min-width: 576px) {
+  #navbarNav {
+    margin-left: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  #navbarNav {
+    margin-left: 91%;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 576px) {
+  .center {
+    width: 50%;
+  }
+}
+
+.bg-dark {
+  background-color: inherit !important;
+}
+
+.bg-dark .navbar-toggler .navbar-toggler-icon {
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .bg-dark .right-nav .nav-item a {
+    font-size: 20px;
+  }
+}
+
+.navbar-expand-lg .navbar-nav {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 }
 
 .right-nav {
