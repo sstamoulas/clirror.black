@@ -129,6 +129,12 @@ section {
   }
 }
 
+@media (max-height: 320px) {
+  .center {
+    max-width: 75%;
+  }
+}
+
 .bg-dark {
   background-color: inherit !important;
 }
@@ -157,11 +163,24 @@ section {
   letter-spacing: 3.9px;
 }
 
+@media (max-width: 850px) {
+  #about .text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 576px) {
+  #about .text {
+    font-size: 15px;
+  }
+}
+
 #still .text {
   font-size: 13px;
   letter-spacing: 15px;
   font-family: "Raleway", Sans-serif;
   font-weight: 400;
+  line-height: 25px;
 }
 
 .navbar-expand-lg .navbar-nav {
