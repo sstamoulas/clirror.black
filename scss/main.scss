@@ -70,6 +70,21 @@ section {
   height: 100vh;
 }
 
+#home {
+  div.row {
+    height: 75%;
+    @media (min-width: 568px) {
+      height: 35%;
+    }
+    @media (min-width: 576px) {
+      height: 50%;
+    }
+    @media (min-width: 992px) {
+      height: 25%;
+    }
+  }
+}
+
 .main-image {
   width: 300px;
   height: 300px;
@@ -112,9 +127,9 @@ section {
   .right-nav {
     .nav-item {
       a {
-        @media (max-width: 768px) {
-          font-size: 20px;
-        }
+          font-size: 15px;
+          letter-spacing: 1.8px;
+          font-weight: 500;
       }
     }
   }

@@ -69,6 +69,28 @@ section {
   height: 100vh;
 }
 
+#home div.row {
+  height: 75%;
+}
+
+@media (min-width: 568px) {
+  #home div.row {
+    height: 35%;
+  }
+}
+
+@media (min-width: 576px) {
+  #home div.row {
+    height: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  #home div.row {
+    height: 25%;
+  }
+}
+
 .main-image {
   width: 300px;
   height: 300px;
@@ -115,10 +137,10 @@ section {
   padding: 40px;
 }
 
-@media (max-width: 768px) {
-  .bg-dark .right-nav .nav-item a {
-    font-size: 20px;
-  }
+.bg-dark .right-nav .nav-item a {
+  font-size: 15px;
+  letter-spacing: 1.8px;
+  font-weight: 500;
 }
 
 .navbar-expand-lg .navbar-nav {
