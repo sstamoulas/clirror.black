@@ -70,21 +70,6 @@ section {
   height: 100vh;
 }
 
-#home {
-  div.row {
-    height: 75%;
-    @media (min-width: 568px) {
-      height: 35%;
-    }
-    @media (min-width: 576px) {
-      height: 50%;
-    }
-    @media (min-width: 992px) {
-      height: 25%;
-    }
-  }
-}
-
 .main-image {
   width: 300px;
   height: 300px;
@@ -138,6 +123,86 @@ section {
   }
 }
 
+#home {
+  height: 70vh;
+  @media (max-height: 823px) {//
+    height: 80vh;
+  }
+  @media (max-height: 812px) {//
+    height: 80vh;
+  }
+  @media (max-height: 736px) {//
+    height: 80vh;
+  }
+  @media (max-height: 731px) {//
+    height: 80vh;
+  }
+  @media (max-height: 667px) {//
+    height: 80vh;
+  }
+  @media (max-height: 640px) {//
+    height: 80vh;
+  }
+  @media (max-height: 568px) {//
+    height: 80vh;
+  }
+  @media (max-height: 414px) {//
+    height: 70vh;
+  }
+  @media (max-height: 411px) {//
+    height: 70vh;
+  }
+  @media (max-height: 375px) {//
+    height: 70vh;
+  }
+  @media (max-height: 360px) {//
+    height: 65vh;
+  }
+  @media (max-height: 320px) {//
+    height: 65vh;
+  }
+
+  div.row {
+    height: 50%;
+    @media (max-height: 823px) {//
+      height: 95%;
+    }
+    @media (max-height: 812px) {//
+      height: 95%;
+    }
+    @media (max-height: 736px) {//
+      height: 90%;
+    }
+    @media (max-height: 731px) {//
+      height: 80%;
+    }
+    @media (max-height: 667px) {//
+      height: 80%;
+    }
+    @media (max-height: 640px) {//
+      height: 80%;
+    }
+    @media (max-height: 568px) {//
+      height: 80%;
+    }
+    @media (max-height: 414px) {//
+      height: 70%;
+    }
+    @media (max-height: 411px) {//
+      height: 70%;
+    }
+    @media (max-height: 375px) {//
+      height: 70%;
+    }
+    @media (max-height: 360px) {//
+      height: 65%;
+    }
+    @media (max-height: 320px) {//
+      height: 55%;
+    }
+  }
+}
+
 #about {
   .title {
     font-size: 24px;
@@ -167,6 +232,15 @@ section {
     font-family: "Raleway", Sans-serif;
     font-weight: 400;
     line-height: 25px;
+  }
+}
+
+#contact {
+  div.row {
+    height: 100%;
+    @media (min-width: 992px) {
+      height: 75%;
+    }
   }
 }
 

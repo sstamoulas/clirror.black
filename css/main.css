@@ -69,28 +69,6 @@ section {
   height: 100vh;
 }
 
-#home div.row {
-  height: 75%;
-}
-
-@media (min-width: 568px) {
-  #home div.row {
-    height: 35%;
-  }
-}
-
-@media (min-width: 576px) {
-  #home div.row {
-    height: 50%;
-  }
-}
-
-@media (min-width: 992px) {
-  #home div.row {
-    height: 25%;
-  }
-}
-
 .main-image {
   width: 300px;
   height: 300px;
@@ -149,6 +127,158 @@ section {
   font-weight: 500;
 }
 
+#home {
+  height: 70vh;
+}
+
+@media (max-height: 823px) {
+  #home {
+    height: 80vh;
+  }
+}
+
+@media (max-height: 812px) {
+  #home {
+    height: 80vh;
+  }
+}
+
+@media (max-height: 736px) {
+  #home {
+    height: 80vh;
+  }
+}
+
+@media (max-height: 731px) {
+  #home {
+    height: 80vh;
+  }
+}
+
+@media (max-height: 667px) {
+  #home {
+    height: 80vh;
+  }
+}
+
+@media (max-height: 640px) {
+  #home {
+    height: 80vh;
+  }
+}
+
+@media (max-height: 568px) {
+  #home {
+    height: 80vh;
+  }
+}
+
+@media (max-height: 414px) {
+  #home {
+    height: 70vh;
+  }
+}
+
+@media (max-height: 411px) {
+  #home {
+    height: 70vh;
+  }
+}
+
+@media (max-height: 375px) {
+  #home {
+    height: 70vh;
+  }
+}
+
+@media (max-height: 360px) {
+  #home {
+    height: 65vh;
+  }
+}
+
+@media (max-height: 320px) {
+  #home {
+    height: 65vh;
+  }
+}
+
+#home div.row {
+  height: 50%;
+}
+
+@media (max-height: 823px) {
+  #home div.row {
+    height: 95%;
+  }
+}
+
+@media (max-height: 812px) {
+  #home div.row {
+    height: 95%;
+  }
+}
+
+@media (max-height: 736px) {
+  #home div.row {
+    height: 90%;
+  }
+}
+
+@media (max-height: 731px) {
+  #home div.row {
+    height: 80%;
+  }
+}
+
+@media (max-height: 667px) {
+  #home div.row {
+    height: 80%;
+  }
+}
+
+@media (max-height: 640px) {
+  #home div.row {
+    height: 80%;
+  }
+}
+
+@media (max-height: 568px) {
+  #home div.row {
+    height: 80%;
+  }
+}
+
+@media (max-height: 414px) {
+  #home div.row {
+    height: 70%;
+  }
+}
+
+@media (max-height: 411px) {
+  #home div.row {
+    height: 70%;
+  }
+}
+
+@media (max-height: 375px) {
+  #home div.row {
+    height: 70%;
+  }
+}
+
+@media (max-height: 360px) {
+  #home div.row {
+    height: 65%;
+  }
+}
+
+@media (max-height: 320px) {
+  #home div.row {
+    height: 55%;
+  }
+}
+
 #about .title {
   font-size: 24px;
   letter-spacing: 15px;
@@ -181,6 +311,16 @@ section {
   font-family: "Raleway", Sans-serif;
   font-weight: 400;
   line-height: 25px;
+}
+
+#contact div.row {
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  #contact div.row {
+    height: 75%;
+  }
 }
 
 .navbar-expand-lg .navbar-nav {
