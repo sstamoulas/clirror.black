@@ -22,14 +22,14 @@ app.post('/send-email', function (req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: 'stamoul1@umbc.edu',
-      pass: 'HELLO_world1'
+      user: 'xxxxxx',
+      pass: 'xxxxxx'
     }
   });
 
   let mailOptions = {
     from: '"Website Mailer" stamoul1@umbc.edu', // sender address
-    to: 'stamoul1@umbc.edu', // list of receivers
+    to: 'xxxxxxx', // list of receivers
     subject: 'Client Form Submission', // Subject line
     text: req.body.name + '\n' + req.body.email + '\n\n' + req.body.message, // plain text body
     html: req.body.name + '<br>' + req.body.email + '<br><br>' + req.body.message // html body
