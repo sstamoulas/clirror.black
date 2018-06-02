@@ -12,17 +12,19 @@
     "template"
   ],
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server",
     "dev": "gulp dev",
     "postinstall": "gulp default"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "bootstrap": "^4.1.1",
-    "express": "4.13.3",
+    "express": "^4.13.3",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "jquery": "^3.3.1",
     "jquery-easing": "0.0.1",
+    "nodemailer": "^4.6.5",
     "popper.js": "^1.14.3",
     "swiper": "^4.3.0"
   },
@@ -32,6 +34,7 @@
     "gulp-clean-css": "^3.9.4",
     "gulp-header": "^2.0.5",
     "gulp-rename": "^1.2.3",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "nodemon": "^1.17.5"
   }
 }

@@ -19,6 +19,10 @@ ul li a:not(a), ul li i:not(a) {
   margin-right: 1px;
 }
 
+ul li:last-child {
+  width: 101%;
+}
+
 body {
   background-color: #000000;
   color: #ffffff;
@@ -91,7 +95,7 @@ section {
 
 @media (min-width: 992px) {
   #navbarNav {
-    margin-left: 91%;
+    margin-left: 35%;
   }
 }
 

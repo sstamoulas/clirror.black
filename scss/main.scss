@@ -17,6 +17,10 @@ ul {
       color: white;
       font-family: "Assistant", Sans-serif;
     }
+
+    &:last-child {
+      width: 101%;
+    }
   }
 }
 
@@ -87,7 +91,7 @@ section {
     margin-left: 80%;
   }
   @media (min-width: 992px) {
-    margin-left: 91%;
+    margin-left: 35%;
   }
 }
 
