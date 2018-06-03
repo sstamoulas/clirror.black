@@ -28,8 +28,8 @@ app.post('/send-email', function (req, res) {
   });
 
   let mailOptions = {
-    from: '"Website Mailer" stamoul1@umbc.edu', // sender address
-    to: 'xxxxxxx', // list of receivers
+    from: '"Clirror Black Mailer" cmedia.info1@gmail.com', // sender address
+    to: 'cmedia.info1@gmail.com', // list of receivers
     subject: 'Client Form Submission', // Subject line
     text: req.body.name + '\n' + req.body.email + '\n\n' + req.body.message, // plain text body
     html: req.body.name + '<br>' + req.body.email + '<br><br>' + req.body.message // html body
