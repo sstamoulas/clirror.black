@@ -1,3 +1,4 @@
+require('dotenv').load();
 var express = require('express');
 var path = require('path');
 var nodeMailer = require('nodemailer');
@@ -22,14 +23,14 @@ app.post('/send-email', function (req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: 'xxx',
-      pass: 'xxx'
+      user: process.env.EMAIL_ADDRESS,
+      pass: process.env.EMAIL_PASSWORD
     }
   });
 
   let mailOptions = {
-    from: '"Clirror Black Mailer" xxx', // sender address
-    to: 'xxx', // list of receivers
+    from: '"Clirror Black Mailer" ' + process.env.EMAIL_ADDRESS, // sender address
+    to: process.env.EMAIL_ADDRESS, // list of receivers
     subject: 'Client Form Submission', // Subject line
     text: req.body.name + '\n' + req.body.email + '\n\n' + req.body.message, // plain text body
     html: req.body.name + '<br>' + req.body.email + '<br><br>' + req.body.message // html body
