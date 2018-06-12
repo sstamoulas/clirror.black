@@ -7,7 +7,7 @@ ul {
 
 ul li a, ul li i {
   color: white;
-  font-family: "Assistant", Sans-serif;
+  font-family: "Avenir Light";
 }
 
 ul li a:not(a), ul li i:not(a) {
@@ -20,13 +20,13 @@ ul li a:not(a), ul li i:not(a) {
 }
 
 ul li:last-child {
-  width: 101%;
+  width: 100%;
 }
 
 body {
   background-color: #000000;
   color: #ffffff;
-  font-family: "Assistant", Sans-serif;
+  font-family: "Avenir Light";
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -34,7 +34,7 @@ body {
 button {
   background-color: gray;
   color: #ffffff;
-  font-family: "Assistant", Sans-serif;
+  font-family: "Avenir Light";
   font-size: 15px;
   text-transform: uppercase;
 }
@@ -283,15 +283,19 @@ section {
   }
 }
 
+#flow .hide {
+  display: none;
+}
+
 #about .title {
   font-size: 24px;
   letter-spacing: 15px;
-  font-family: "Raleway", Sans-serif;
+  font-family: "Avenir Light";
   font-weight: 400;
 }
 
 #about .text {
-  font-family: "Assistant", Sans-serif;
+  font-family: "Avenir Light";
   font-size: 25px;
   font-weight: 300;
   letter-spacing: 3.9px;
@@ -312,7 +316,7 @@ section {
 #still .text {
   font-size: 13px;
   letter-spacing: 15px;
-  font-family: "Raleway", Sans-serif;
+  font-family: "Avenir Light";
   font-weight: 400;
   line-height: 25px;
 }

@@ -29,9 +29,43 @@
 
     //This will be the object name for interacting with the videos in the rest of this code
     var videoArray = new Array();
+    var player;
+
+    $('#flow img').click(function() {
+        //alert( $('#flow img').index(this) );
+
+        $(this).next().find('.youtube-video').parent().parent().removeClass('hide');
+
+        dataset = $(this).next().find('.youtube-video')[0].dataset.id;
+        
+        //This will be the variable name for inserting videos into the HTML divs
+        var divID = 'vid-' + $(this)[0].dataset.id.toString();
+
+        $(this).remove();
+        
+        //Setup video object, configure how videos should be presented
+        player = new YT.Player(divID, {
+            height: '100%',
+            width: '100%',
+            playerVars: {
+                'autoplay': 1,
+                'controls': 0,
+                'modestbranding': 1,
+                'rel': 0,
+                'showinfo': 0,
+                'loop': 1,
+                'iv_load_policy': 3
+            },
+            videoId: dataset, //Uses current looped ID from array
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    });
 
 
-
+/*
     //Function: onYouTubePlayerAPIReady - Run when API is ready
     function onYouTubePlayerAPIReady() {
         
@@ -70,7 +104,7 @@
             
         }
     }
-
+*/
 
 
     //Function: onPlayerReady - Run when video player is ready
@@ -130,8 +164,27 @@
         });
     }
 
+    //Bind Click and Touchstart events to the custom video button
+    $( ".play-button-wrapper" ).bind("click touchstart", function() {
 
+        //Find the active carousel slide and target the Iframe within it
+        $("#video-carousel").find('.active iframe').each(function(){
+            //If the active slide's video is Playing
+            if (player.getPlayerState() == 1) {
+                player.pauseVideo();     //Pause video on click
 
+            //If the active slide's video is Paused
+            } else if (player.getPlayerState() == 2) {
+                player.playVideo();      //Play video on click
+
+            //If the video is doing anything else
+            } else {
+                player.playVideo();      //Play video on click
+            }
+
+        });
+    });
+/*
     //Bind Click and Touchstart events to the custom video button
     $( ".play-button-wrapper" ).bind("click touchstart", function() {
 
@@ -157,28 +210,4 @@
 
         });
     });
-/*
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 3,
-  centeredSlides: true,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  virtual: {
-    slides: (function () {
-      var slides = [];
-      slides.push('<img width="300" height="250" src="http://www.clirror.com/wp-content/uploads/2018/05/Screen-Shot-2018-05-18-at-12.16.15-AM.jpeg" />');
-      slides.push('<img width="300" height="250" src="http://www.clirror.com/wp-content/uploads/2018/05/Screen-Shot-2018-05-18-at-12.22.06-AM.jpeg" />');
-      slides.push('<img width="300" height="250" src="http://www.clirror.com/wp-content/uploads/2018/04/6P0A7987-1.jpg" />');
-      slides.push('<img width="300" height="250" src="http://www.clirror.com/wp-content/uploads/2018/05/sitting.jpg" />');
-      return slides;
-    }()),
-  },
-});
 */

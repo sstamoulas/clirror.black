@@ -22,14 +22,14 @@ app.post('/send-email', function (req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: 'xxxxxx',
-      pass: 'xxxxxx'
+      user: 'xxx',
+      pass: 'xxx'
     }
   });
 
   let mailOptions = {
-    from: '"Clirror Black Mailer" xxxxxxxxxx', // sender address
-    to: 'xxxxxxxxxx', // list of receivers
+    from: '"Clirror Black Mailer" xxx', // sender address
+    to: 'xxx', // list of receivers
     subject: 'Client Form Submission', // Subject line
     text: req.body.name + '\n' + req.body.email + '\n\n' + req.body.message, // plain text body
     html: req.body.name + '<br>' + req.body.email + '<br><br>' + req.body.message // html body
