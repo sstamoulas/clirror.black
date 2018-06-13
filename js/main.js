@@ -31,17 +31,16 @@
     var videoArray = new Array();
     var player;
 
-    $('#flow img').click(function() {
-        //alert( $('#flow img').index(this) );
+    $('#flow img').add('#flow i').click(function() {
+        $(this).parent().find('.embed-responsive').removeClass('hide');
 
-        $(this).next().find('.youtube-video').parent().parent().removeClass('hide');
-
-        dataset = $(this).next().find('.youtube-video')[0].dataset.id;
+        dataset = $(this).parent().find('.embed-responsive .youtube-video')[0].dataset.id;
         
         //This will be the variable name for inserting videos into the HTML divs
         var divID = 'vid-' + $(this)[0].dataset.id.toString();
 
-        $(this).remove();
+        $(this).parent().find('img').remove();
+        $(this).parent().find('i').remove();
         
         //Setup video object, configure how videos should be presented
         player = new YT.Player(divID, {

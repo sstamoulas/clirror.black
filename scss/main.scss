@@ -3,19 +3,25 @@ ul {
   text-align: right;
   list-style-type: none;
   padding-right: 2%;
-  
+
   li {
+    color: white;
+    font-family: 'Assistant', sans-serif;
     a, i {
+      color: white;
+      font-family: 'Assistant', sans-serif;
+      font-weight: 500;
+
       &:not(a) {
         border-style: ridge;
         border-width: 1px 1px 1px 1px;
         border-color: white;
         padding: .3rem;
         font-size: 10px;
+        font-weight: 400;
+        line-height: 10px;
         margin-right: 1px;
       }
-      color: white;
-      font-family: "Avenir Light";
     }
 
     &:last-child {
@@ -26,17 +32,23 @@ ul {
 
 body {
   background-color: #000000;
-  color: #ffffff;
-  font-family: "Avenir Light";
+  color: white;
+  font-family: 'Assistant', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 button {
   background-color: gray;
-  color: #ffffff;
-  font-family: "Avenir Light";
+  color: white;
+  font-family: 'Assistant', sans-serif;
   font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  line-height: .1em;
+  min-height: 33px;
   text-transform: uppercase;
 }
 
@@ -75,21 +87,53 @@ section {
 }
 
 .main-image {
-  width: 300px;
-  height: 300px;
+  width: 800px;
+  height: 500px;
   position: absolute;
-  left: 50%;
-  top: 50%; 
+  left: 20vw;
   margin-left: -150px;
-  margin-top: -150px;
+  margin-top: -250px;
+
+  @media (max-width: 850px) {//812
+    height: 300px;
+    left: 22%;
+    top: 105px;
+    width: 700px;
+  }
+
+  @media (max-width: 750px) {//736
+    left: 9vw;
+  }
+
+  @media (max-width: 675px) {//736
+    left: 11vw;
+  }
+
+  @media (max-width: 575px) {//736
+    left: 32vw;
+    width: 500px;
+  }
+
+  @media (max-width: 450px) {
+    left: 35%;
+    width: 100vw;
+
+    @media (max-width: 375px) {
+      left: 40%;
+    }
+
+    @media (max-width: 350px) {
+      left: 45%;
+    }
+  }
 }
 
 #navbarNav {
-
-  margin-left: 60%;
-  @media (min-width: 576px) {
-    margin-left: 80%;
+  @media (min-width: 850px) {
+    margin-left: 60%;
   }
+  width: 120px;
+
   @media (min-width: 992px) {
     margin-left: 35%;
   }
@@ -99,9 +143,11 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
   @media (min-width: 576px) {
     width: 50%;
   }
+
   @media (max-height: 320px) {
     max-width: 75%;
   }
@@ -211,24 +257,38 @@ section {
   .hide {
     display: none;
   }
+  .carousel-item {
+    i {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+    }
+  }
 }
 
 #about {
   .title {
+    font-family: 'Raleway', sans-serif;
     font-size: 24px;
-    letter-spacing: 15px;
-    font-family: "Avenir Light";
     font-weight: 400;
+    letter-spacing: 15px;
   }
 
   .text {
-    font-family: "Avenir Light";
+    font-family: 'Assistant', sans-serif;
     font-size: 25px;
     font-weight: 300;
     letter-spacing: 3.9px;
+    text-transform: capitalize;
+
+    @media (min-width: 850px) {
+      line-height: 41px;
+    }
+
     @media (max-width: 850px) {
       font-size: 19px;
     }
+
     @media (max-width: 576px) {
       font-size: 15px;
     }
@@ -237,17 +297,18 @@ section {
 
 #still {
   .text {
+    font-family: 'Raleway', sans-serif;
     font-size: 13px;
-    letter-spacing: 15px;
-    font-family: "Avenir Light";
     font-weight: 400;
-    line-height: 25px;
+    letter-spacing: 15px;
+    line-height: 22px;
   }
 }
 
 #contact {
   div.row {
     height: 100%;
+
     @media (min-width: 992px) {
       height: 75%;
     }
@@ -257,6 +318,7 @@ section {
 .navbar-expand-lg {
   .navbar-nav {
     display: block;
+    flex-direction: unset;
     @media (max-width: 768px) {
       -ms-flex-direction: row;
       flex-direction: row;

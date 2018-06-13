@@ -5,9 +5,15 @@ ul {
   padding-right: 2%;
 }
 
+ul li {
+  color: white;
+  font-family: 'Assistant', sans-serif;
+}
+
 ul li a, ul li i {
   color: white;
-  font-family: "Avenir Light";
+  font-family: 'Assistant', sans-serif;
+  font-weight: 500;
 }
 
 ul li a:not(a), ul li i:not(a) {
@@ -16,6 +22,8 @@ ul li a:not(a), ul li i:not(a) {
   border-color: white;
   padding: .3rem;
   font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
   margin-right: 1px;
 }
 
@@ -25,17 +33,23 @@ ul li:last-child {
 
 body {
   background-color: #000000;
-  color: #ffffff;
-  font-family: "Avenir Light";
+  color: white;
+  font-family: 'Assistant', sans-serif;
   font-size: 15px;
   text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 button {
   background-color: gray;
-  color: #ffffff;
-  font-family: "Avenir Light";
+  color: white;
+  font-family: 'Assistant', sans-serif;
   font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  line-height: .1em;
+  min-height: 33px;
   text-transform: uppercase;
 }
 
@@ -74,22 +88,68 @@ section {
 }
 
 .main-image {
-  width: 300px;
-  height: 300px;
+  width: 800px;
+  height: 500px;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 20vw;
   margin-left: -150px;
-  margin-top: -150px;
+  margin-top: -250px;
+}
+
+@media (max-width: 850px) {
+  .main-image {
+    height: 300px;
+    left: 22%;
+    top: 105px;
+    width: 700px;
+  }
+}
+
+@media (max-width: 750px) {
+  .main-image {
+    left: 9vw;
+  }
+}
+
+@media (max-width: 675px) {
+  .main-image {
+    left: 11vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .main-image {
+    left: 32vw;
+    width: 500px;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-image {
+    left: 35%;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 450px) and (max-width: 375px) {
+  .main-image {
+    left: 40%;
+  }
+}
+
+@media (max-width: 450px) and (max-width: 350px) {
+  .main-image {
+    left: 45%;
+  }
 }
 
 #navbarNav {
-  margin-left: 60%;
+  width: 120px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 850px) {
   #navbarNav {
-    margin-left: 80%;
+    margin-left: 60%;
   }
 }
 
@@ -287,18 +347,31 @@ section {
   display: none;
 }
 
+#flow .carousel-item i {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}
+
 #about .title {
+  font-family: 'Raleway', sans-serif;
   font-size: 24px;
-  letter-spacing: 15px;
-  font-family: "Avenir Light";
   font-weight: 400;
+  letter-spacing: 15px;
 }
 
 #about .text {
-  font-family: "Avenir Light";
+  font-family: 'Assistant', sans-serif;
   font-size: 25px;
   font-weight: 300;
   letter-spacing: 3.9px;
+  text-transform: capitalize;
+}
+
+@media (min-width: 850px) {
+  #about .text {
+    line-height: 41px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -314,11 +387,11 @@ section {
 }
 
 #still .text {
+  font-family: 'Raleway', sans-serif;
   font-size: 13px;
-  letter-spacing: 15px;
-  font-family: "Avenir Light";
   font-weight: 400;
-  line-height: 25px;
+  letter-spacing: 15px;
+  line-height: 22px;
 }
 
 #contact div.row {
@@ -333,6 +406,7 @@ section {
 
 .navbar-expand-lg .navbar-nav {
   display: block;
+  flex-direction: unset;
 }
 
 @media (max-width: 768px) {
